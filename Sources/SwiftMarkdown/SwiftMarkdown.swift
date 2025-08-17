@@ -24,7 +24,7 @@ public struct MarkdownOptions: OptionSet {
     static public let unsafe = MarkdownOptions(rawValue: 1 << 17)
 }
 
-public func markdownToHTML_GFM(
+public func markdownToHTML(
     _ markdown: String,
     options: MarkdownOptions = [.safe],
     enable: [String] = ["table", "strikethrough", "autolink", "tasklist"]
